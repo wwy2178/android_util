@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="GoldImageText">
+
+        <attr name="dd_canReceive" format="boolean"/>
+        <attr name="dd_visibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="dd_gravity">
+            <enum name="top" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="center_horizontal" value="4"/>
+            <enum name="center_vertical" value="5"/>
+            <enum name="center" value="6"/>
+            <enum name="bottom_center_horizontal" value="7"/>
+        </attr>
+        <attr name="dd_textStyle">
+
+            <enum name="mormal" value="0"/>
+            <enum name="bold" value="1"/>
+
+        </attr>
+        <attr name="dd_paddingBottom" format="dimension"/>
+        <attr name="dd_floatImg" format="reference"/>
+        <attr name="dd_floatTxt" format="string"/>
+        <attr name="dd_floatTxtSize" format="dimension"/>
+        <attr name="dd_floatTxtColor" format="color"/>
+        <attr name="dd_animDuration" format="integer"/>
+        <attr name="dd_cornerMaskImg" format="reference"/>
+        <attr name="dd_cornerMaskTxt" format="string"/>
+        <attr name="dd_drawableTop" format="reference"/>
+        <attr name="dd_drawablePadding" format="dimension"/>
+
+    </declare-styleable>
+
+</resources>
