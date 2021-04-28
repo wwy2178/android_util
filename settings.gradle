@@ -1,3 +1,4 @@
 include ':float_image_text'
+include ':default_scene'
 include ':app'
 rootProject.name = "MyGitGlideTest"
