@@ -1,5 +1,54 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.float_image.text">
+    package="com.home.libs">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    /
+    <application>
+        <activity
+            android:name=".out.activity.OutSceneForHomeKeyActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.charger.treasure.single"
+            android:theme="@style/transparentTheme" />
+
+        <activity
+            android:name=".out.activity.OutSceneFinishActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.charger.treasure.single"
+            android:theme="@style/transparentTheme" />
+
+        <activity
+            android:name=".out.activity.OutSceneForPackageActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.charger.treasure.single"
+            android:theme="@style/transparentTheme" />
+
+        <activity
+            android:name=".out.activity.OutSceneForWifiActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.charger.treasure.single"
+            android:theme="@style/transparentTheme" />
+
+        <activity
+            android:name=".out.activity.FullVideoAdActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.charger.treasure.single"
+            android:theme="@style/transparentTheme" />
+
+        <activity
+            android:name=".out.activity.RewardVideoAdActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.charger.treasure.single"
+            android:theme="@style/transparentTheme" />
+        <activity android:name=".out.activity.OutSceneRechargeActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+    </application>
 </manifest>
